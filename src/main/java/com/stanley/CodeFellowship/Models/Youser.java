@@ -18,6 +18,11 @@ public class Youser implements UserDetails {
     private String password;
     private String firstName;
 
+    private String lastName;
+
+    private int dateOfBirth;
+    private String bio;
+
     public Youser(String username, String password, String firstName, String lastName, int dateOfBirth, String bio) {
         this.username = username;
         this.password = password;
@@ -27,10 +32,7 @@ public class Youser implements UserDetails {
         this.bio = bio;
     }
 
-    private String lastName;
 
-    private int dateOfBirth;
-    private String bio;
 
 
     public String getUsername() {
@@ -43,10 +45,6 @@ public class Youser implements UserDetails {
 
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public void setUsername(String username) {
